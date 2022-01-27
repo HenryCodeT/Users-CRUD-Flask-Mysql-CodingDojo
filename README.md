@@ -1,7 +1,6 @@
 # Users-CRUD-Flask-Mysql-CodingDojo
 ### Python - flask - mysql
 ### Install packages
-* ```pipenv install Flask```
 * ```pipenv install PyMySQL flask```
 * ```pipenv shell```
 * ```python server.py```
