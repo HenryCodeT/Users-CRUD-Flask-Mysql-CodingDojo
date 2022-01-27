@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="card mx-auto my-3 fs-4" style="width:800px;">
+    <div class="card-body">
+      <div class="d-flex justify-content-between">
+        <h2 class="card-title">User {{user.id}}</h2>
+        <a href="/users" class="btn btn-primary">Home</a>
+      </div>  
+      <div class="border border-black">
+        <p>Full Name: {{user.first_name}} {{user.last_name}}</p>
+        <p>Email: {{user.email}}</p>
+        <p>Created On: {{user.created_at.strftime("%d %B, %Y")}}</p>
+        <p>Last update: {{user.updated_at.strftime("%d %B, %Y, %H:%M:%S")}}</p>
+      </div>
+      <a href="/users/{{user.id}}/edit" class="btn btn-primary">Edit</a>
+      <a href="/users/delete/{{user.id}}" class="btn btn-primary">Delete</a>
+    </div>
+</div>  
+{% endblock %}
