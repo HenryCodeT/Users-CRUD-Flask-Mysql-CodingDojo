@@ -10,7 +10,7 @@
 * ```http://127.0.0.1:5000/users```
 
 ### Project structure
-
+```
 ├── server.py
 └── users_app/
     ├── __init__.py
@@ -25,6 +25,7 @@
         ├── edit.html
         ├── new_user.html
         └── show_user.html
+  ```
         
   
  
